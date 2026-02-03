@@ -5,7 +5,7 @@ A dynamic weather web application built using **HTML, CSS, and JavaScript** that
 ---
 
 🌐 Live Preview
-🔗 https://your-username.github.io/weather-app/
+🔗 https://shree0999.github.io/Weather-Web-App/
 
 ---
 
