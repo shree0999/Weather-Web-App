@@ -5,22 +5,22 @@ const checkWeather = async(name) => {
     const res = await fetch(apiurl);
     const data = await res.json()
     
-    // console.log(data)
+    console.log(data)
 
 
     const img = document.querySelector(".weather")
-    if(data.weather[0].main == " Clouds"){
-        img.src = "source/clouds.png"
+    if(data.weather[0].main == "Clouds"){
+        img.src = "assets/clouds.png"
     } else if (data.weather[0].main == "Clear"){
-        img.src = "source/clear.png"
+        img.src = "assets/clear.png"
     } else if (data.weather[0].main == "Rain"){
-        img.src = "source/rain.png"
+        img.src = "assets/rain.png"
     } else if (data.weather[0].main == "Mist"){
-        img.src = "source/mist.png"
+        img.src = "assets/mist.png"
     } else if (data.weather[0].main == "Snow"){
-        img.src = "source/snow.png"
+        img.src = "assets/snow.png"
     } else if (data.weather[0].main == "Drizzle"){
-        img.src = "source/drizzle.png"
+        img.src = "assets/drizzle.png"
     }
 
 
@@ -37,7 +37,7 @@ const checkWeather = async(name) => {
 }
 
 document.querySelector(".inp button").addEventListener(
-    "click" , ()=> {
+    "click", ()=> {
         const location = document.querySelector(".inp input").value;
         checkWeather(location); 
     }
